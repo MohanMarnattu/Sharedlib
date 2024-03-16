@@ -6,5 +6,5 @@ def mavenBuild(){
 }
 
 def qadeploy(jobname,ip,path){
-     sh 'scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat9/webapps/${path}.war'
+     sh 'scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.jar ubuntu@${ip}:/var/lib/tomcat9/webapps/${path}.war'
 }
